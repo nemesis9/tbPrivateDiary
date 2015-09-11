@@ -1,0 +1,34 @@
+
+tbPrivateDiary stores encrypted, time-stamped diary entries in a file in your home directory, private_diary.pdl
+
+It uses blowfish and a user-supplied password to encrypt the entries.
+
+If you forget your password you will lose your diary entries.
+
+After all, "only YOU have the key to your private diary."
+
+Builds on Qt 5.5 GUI framework, targeted at Linux platform.  I have not used it on Windows.
+
+Currently, there is a bug when you edit an existing entry.  The timestamp and some of the entry text gets deleted. 
+
+
+//////////////////////////////////////
+To build, you need the Qt 5.5 development libraries:
+
+in src directory, you need to tell qmake that you want the name to be tbPrivateDiary,
+otherwise, it will create a src.pro and build a program called src, so:
+
+First:
+$>qmake -project -o tbPrivateDiary.pro
+
+Then, add the following two lines near the top of the .pro file 
+QT += gui
+QT += widgets
+
+Then, run:
+$>qmake
+$>make
+
+This will build tbPrivateDiary executable in src directory.
+
+
