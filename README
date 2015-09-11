@@ -7,12 +7,12 @@ If you forget your password you will lose your diary entries.
 
 After all, "only YOU have the key to your private diary."
 
-Builds on Qt 5.5 GUI framework, targeted at Linux platform.  I have not used it on Windows.
+////////////////////////////////////////////////////////////////////////
 
-Currently, there is a bug when you edit an existing entry.  The timestamp and some of the entry text gets deleted. 
+It builds on Qt 5.5 C++ GUI framework, targeted at Linux platform.  I have not used it on Windows.
 
 
-//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
 To build, you need the Qt 5.5 development libraries:
 
 in src directory, you need to tell qmake that you want the name to be tbPrivateDiary,
