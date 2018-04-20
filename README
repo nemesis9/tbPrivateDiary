@@ -15,7 +15,7 @@ It builds on Qt 5.5 C++ GUI framework, targeted at Linux platform.  I have not u
 ////////////////////////////////////////////////////////////////////////
 To build, you need the Qt 5.5 development libraries:
 
-in src directory, you need to tell qmake that you want the name to be tbPrivateDiary,
+In src directory, you need to tell qmake that you want the name to be tbPrivateDiary,
 otherwise, it will create a src.pro and build a program called src, so:
 
 First:
